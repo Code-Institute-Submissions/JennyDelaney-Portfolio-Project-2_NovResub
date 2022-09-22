@@ -3,14 +3,14 @@ This is a memory game created by Jenny Delaney. It is designed to be responsive 
 
 ## User Experience (UX)User Experience (UX)
 ### User storiesUser stories
-The user should see a grid style game with 16 cards on display - these cards will have a front and back image.
-The user should only be able to click on two cards at a time, to try to find a matching pair.
-The timer should activate once the user clicks on the first card and a move should be logged when the user clicks on the second card.
-The timer should stop once the user has clicked on the last card of a matching pair.
-The user should receive a message to confirm their win and a display to show how long it took and how many moves it took to match all of the pairs.
-The user should be able to close the pop up message at the end of the game with a click on the "New Game" button or "Exit" button.
-The user should have the option to reset the game at any time during play.
-By playing this game the user should be able to test their memory skill in a fun environment.
+- The user should see a grid style game with 16 cards on display - these cards will have a front and back image.
+- The user should only be able to click on two cards at a time, to try to find a matching pair.
+- The timer should activate once the user clicks on the first card and a move should be logged when the user clicks on the second card.
+- The timer should stop once the user has clicked on the last card of a matching pair.
+- The user should receive a message to confirm their win and a display to show how long it took and how many moves it took to match all of the pairs.
+- The user should be able to close the pop up message at the end of the game with a click on the "New Game" button or "Exit" button.
+- The user should have the option to reset the game at any time during play.
+- By playing this game the user should be able to test their memory skill in a fun environment.
 
 
 ## Design
@@ -24,7 +24,7 @@ Imagery is important. The large, background hero image is designed to be strikin
 ## Wireframes
 ### Main Page Wireframe
 
-![Wireframe Images](/assets/readme-images/memory-charge-wireframe-image.png)
+![Wireframe Images](/assets/readme-images/Memory-Charge-Wireframe-image.png)
 
 Mobile Wireframe - View
 
