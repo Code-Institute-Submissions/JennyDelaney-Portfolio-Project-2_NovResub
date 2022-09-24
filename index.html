@@ -5,29 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Memory Charger</title>
 </head>
 <body>
-    <!-- Title of Game -->
-    <h1 class="heading">Memory Charge</h1>
+  <!-- Title of Game -->
+  <h1 class="heading">Memory Charge</h1>
 
-    <!-- Rules and Reset buttons -->
-    <div class="buttons-left-top">
-        <button class="rules-button">How to play</button></div>
-    <div class="buttons-left-bottom">
-        <button class="reset-buttom">Reset Game</button>
+  <!-- Rules and Reset buttons -->
+  <div class="game-container">
+    <div class="game-track">
+      <span class="timer">Timer 0:00</span>
+      <span class="moves">Moves 0</span>
     </div>
 
-    <!-- Game Board -->
-    <div class="board">board</div>
+    <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
+  <section class="memory-game">
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/cat.jpg" alt="Cat">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/cat.jpg" alt="Cat">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/chicken.jpg" alt="Chicken">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/chicken.jpg" alt="Chicken">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/cows.jpg" alt="Cows">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+        <img class="front-face" src="/assets/images/cows.jpg" alt="Cows">
+        <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+      </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/dog.jpg" alt="Dogs">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/dog.jpg" alt="Dogs">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/fish-pond.jpg" alt="fish-pond">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/fish-pond.jpg" alt="fish-pond">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/horses.jpg" alt="Horses">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+      
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/horses.jpg" alt="Horses">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/parrots.jpg" alt="Parrots">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+    
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/parrots.jpg" alt="Parrots">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/rabbits.jpg" alt="Rabbits">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+
+    <div class="memory-card">
+      <img class="front-face" src="/assets/images/rabbits.jpg" alt="Rabbits">
+      <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Memory Card">
+    </div>
+    
+  </section>
     
     <!-- Timer and Number of Moves buttons -->
-    <div class="buttons-right-top">
-        <button class="timer">Timer</button></div>
-    <div class="buttons-right-bottom">
-        <button class="number-moves">Number of Moves</button>
-    </div>        
-    
+    <span class="buttons-bottom">
+      <button id="btn" class="rules-button">How to play</button>
+      <button id="btn" class="reset-buttom">Reset Game</button>        
+    </span>        
+  </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/060a522d0a.js" crossorigin="anonymous"></script>
 </body>
 </html>

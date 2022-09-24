@@ -24,9 +24,8 @@ Imagery is important. The large, background hero image is designed to be strikin
 ## Wireframes
 ### Main Page Wireframe
 
-![Wireframe Images](/assets/readme-images/Memory-Charge-Wireframe-image.png)
+![Wireframe Images](/assets/readme-images/memory-charge-wireframe.png)
 
-Mobile Wireframe - View
 
 Features
 Responsive on all device sizes
@@ -52,8 +51,6 @@ Git
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 GitHub:
 GitHub is used to store the projects code after being pushed from Git.
-Photoshop:
-Photoshop was used to create the logo, resizing images and editing photos for the website.
 Balsamiq:
 Balsamiq was used to create the wireframes during the design process.
 Testing
@@ -61,6 +58,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 W3C Markup Validator - Results
 W3C CSS Validator - Results
+
 Testing User Stories from User Experience (UX) Section
 First Time Visitor Goals
 As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
