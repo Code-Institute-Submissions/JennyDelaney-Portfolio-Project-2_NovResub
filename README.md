@@ -24,7 +24,7 @@ Imagery is important. The large, background hero image is designed to be strikin
 ## Wireframes
 ### Main Page Wireframe
 
-![Wireframe Images](/assets/readme-images/memory-charge-wireframe.png)
+![Wireframe Images](assets/readme-images/memory-charge-wireframe.png)
 
 
 Features
