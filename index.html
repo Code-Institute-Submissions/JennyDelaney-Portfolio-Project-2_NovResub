@@ -14,8 +14,12 @@
   <!-- Rules and Reset buttons -->
   <div class="game-container">
     <div class="game-track">
-      <span class="timer">Timer 0:00</span>
-      <span class="moves">Moves 0</span>
+      <span class="button" onclick="resetBoard()">Reset</span>
+      </span>
+      <span class="button">
+        <span class="counter">0</span>
+        "Clicks"
+      </span>
     </div>
 
     <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
@@ -101,12 +105,21 @@
       </div>
     </section>
     
-    <!-- Timer and Number of Moves buttons -->
-    <span class="buttons-bottom">
-      <button id="btn" class="rules-button">How to play</button>
-      <button id="btn" class="reset-buttom">Reset Game</button>        
-    </span>        
+  <!-- Trigger/How to play Modal -->
+  <div class="rules-button">
+  <button id="myBtn">How to play</button>
+  </div>  
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
   </div>
+
+</div>
 
   <script src="assets/js/script.js"></script>
   <script src="https://kit.fontawesome.com/060a522d0a.js" crossorigin="anonymous"></script>
