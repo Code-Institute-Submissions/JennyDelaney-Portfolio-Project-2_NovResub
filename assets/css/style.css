@@ -1,11 +1,12 @@
 
 body {
-  background: url(/assets/images/background-image.jpg) no-repeat center center / cover;
+  background: url(../images/background-image.jpg) no-repeat center center / cover;
 }
 
 .heading {
   text-align: center;
   letter-spacing: 5px;
+  font-weight: 600;
 }
 
 .game-container {
