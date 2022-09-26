@@ -14,6 +14,7 @@
   <!-- Rules and Reset buttons -->
   <div class="game-container">
     <div class="game-track">
+      <span class="button" id="myBtn">How to play</span>
       <span class="button" onclick="resetBoard()">Reset</span>
       </span>
       <span class="button">
@@ -104,19 +105,23 @@
         <img class="back-face" src="/assets/images/card-back-image.jpg" alt="Spiral Card">
       </div>
     </section>
-    
-  <!-- Trigger/How to play Modal -->
-  <div class="rules-button">
-  <button id="myBtn">How to play</button>
-  </div>  
-  
-  <!-- The Modal -->
+     
+  <!-- How to play Modal -->
   <div id="myModal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <h2 class="rules">How to Play</h2>
+    <p>The purpose of this memory game is to memorize the locations of the cards in the 
+      game and to make pairs of cards by turning them over 2 by 2. When the 2 cards match,
+       it's a pair! You win the pair and have the right to play again, otherwise the cards
+       are automatically turned face down and you have to make a new try.
+    </p>
+    <p>Every time you start a new game, a random selection and a random positioning of the
+      cards ensure you a different game than the previous one, so you can play as many times 
+      as you want!
+    </p>
   </div>
 
 </div>
