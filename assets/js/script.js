@@ -1,12 +1,10 @@
 // Game functions - code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/ and amended
 
 const cards = document.querySelectorAll(".memory-card");
-const MAX_Match = 8;
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-let perfectMatch = 0;
 
 // code for modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
 var modal = document.getElementById("myModal"); // How to play Modal
@@ -34,9 +32,6 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   isMatch ? disableCards() : unflipCards();
 
-  if (isMatch) perfectMatch += 1;
-
-  if (perfectMatch === MAX_Match) winGame();
 }
 
 function disableCards() {

@@ -55,17 +55,22 @@ Imagery is important. The images are fun pictures of pets which children can rel
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
-[Results - 36 Warnings about self closing tags.  These were removed. Validator returned Clear.
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [JavaScript Validator](https://jshint.com/)
+Results - 36 Warnings about self closing tags.  These were removed. Validator returned Clear.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
+Results - Line 60 Value Error: position : center is not a position. This was removed. Validator returned Clear.
+-   [JavaScript Validator](https://jshint.com/) - 
+Results - Three variable were undefined. These were removed.
 
 ### Testing User Stories from User Experience (UX) Section
 
--  
+- The user sees a grid style game with 16 cards on display - these cards all appear the same until they are clicked to reveal the image on the card.
+- The user is only able to click on two cards at a time, to try to find a matching pair.  If a match is not found the image flips back.  If the images match the cards stay showing.
+- The user can click on the reste button at any time during play and the game sets.
+- By playing this game the users tested their memory skill to match the cards in a fun environment.
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.  Website does not appear to be suitable on Mozilla.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone 8 & iPhone XR.
 -   A large amount of testing was done to ensure game responded as expected.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
