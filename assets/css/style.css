@@ -57,7 +57,6 @@ and amended */
   position: relative;
   border: 3px solid #002169;
   border-radius: 10px;
-  position: center;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   transform: scale(1);
   transform-style: preserve-3d;

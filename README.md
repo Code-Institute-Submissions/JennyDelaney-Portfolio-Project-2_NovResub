@@ -55,7 +55,7 @@ Imagery is important. The images are fun pictures of pets which children can rel
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
-[Results - 36 Warnings about self closing tags.  These were removed.
+[Results - 36 Warnings about self closing tags.  These were removed. Validator returned Clear.
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [JavaScript Validator](https://jshint.com/)
 
