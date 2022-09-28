@@ -16,7 +16,7 @@
     <!-- Rules and Reset buttons -->
     <div class="game-track">
       <span class="button" id="myBtn">How to play</span>
-      <span class="button" onclick="reset()">Reset</span>
+      <span class="button" id="reset-btn" onclick="reset()">Reset</span>
       <span class="button">
         <span class="counter">0</span>
         Clicks
@@ -25,6 +25,7 @@
 
     <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
     <section class="memory-game">
+    <!-- Card Images -->
       <div class="memory-card" data-framework="cat">
         <img class="front-face" src="assets/images/cat.webp" alt="Cat">
         <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">

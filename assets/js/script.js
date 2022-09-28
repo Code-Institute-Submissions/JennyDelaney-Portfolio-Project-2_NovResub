@@ -6,6 +6,11 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+// code for modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
+var modal = document.getElementById("myModal"); // How to play Modal
+var btn = document.getElementById("myBtn"); // Get the button that opens the modal
+var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -60,15 +65,14 @@ function resetBoard () {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-// How to play Modal
-var modal = document.getElementById("myModal");
+// Reset button
+function reset() {
+  window.location.reload(true);
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
+// code for modal taken from https://www.w3schools.com/howto/howto_css_modals.asp
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
