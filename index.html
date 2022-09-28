@@ -1,133 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Memory Charger</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="game-container">
-  
-    <!-- Title of Game -->
-    <h1 class="heading">Memory Charge !</h1>
+      <!-- Title of Game -->
+      <h1 class="heading">Memory Charge !</h1>
 
-    <!-- Rules and Reset buttons -->
-    <div class="game-track">
-      <span class="button" id="myBtn">How to play</span>
-      <span class="button" id="reset-btn" onclick="reset()">Reset</span>
-      <span class="button">
-        <span class="counter">0</span>
-        Clicks
-      </span>
+      <!-- Rules and Reset buttons -->
+      <div class="game-track">
+        <span class="button" id="myBtn">How to play</span>
+        <span class="button" id="reset-btn" onclick="reset()">Reset</span>
+      </div>
+
+      <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
+      <section class="memory-game">
+        <!-- Card Images -->
+        <div class="memory-card" data-framework="cat">
+          <img class="front-face" src="assets/images/cat.webp" alt="Cat" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="cat">
+          <img class="front-face" src="assets/images/cat.webp" alt="Cat" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="chicken">
+          <img
+            class="front-face"
+            src="assets/images/chicken.webp"
+            alt="Chicken"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="chicken">
+          <img
+            class="front-face"
+            src="assets/images/chicken.webp"
+            alt="Chicken"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="cows">
+          <img class="front-face" src="assets/images/cows.webp" alt="Cows" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="cows">
+          <img class="front-face" src="assets/images/cows.webp" alt="Cows" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="dogs">
+          <img class="front-face" src="assets/images/dog.webp" alt="Dogs" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="dogs">
+          <img class="front-face" src="assets/images/dog.webp" alt="Dogs" />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="fish-pond">
+          <img
+            class="front-face"
+            src="assets/images/fish-pond.webp"
+            alt="fish-pond"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="fish-pond">
+          <img
+            class="front-face"
+            src="assets/images/fish-pond.webp"
+            alt="fish-pond"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="guinea-pig">
+          <img
+            class="front-face"
+            src="assets/images/guinea-pig.webp"
+            alt="Guinea-pig"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="guinea-pig">
+          <img
+            class="front-face"
+            src="assets/images/guinea-pig.webp"
+            alt="Guinea-pig"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="parrots">
+          <img
+            class="front-face"
+            src="assets/images/parrots.webp"
+            alt="Parrots"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="parrots">
+          <img
+            class="front-face"
+            src="assets/images/parrots.webp"
+            alt="Parrots"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="rabbits">
+          <img
+            class="front-face"
+            src="assets/images/rabbits.webp"
+            alt="Rabbits"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+
+        <div class="memory-card" data-framework="rabbits">
+          <img
+            class="front-face"
+            src="assets/images/rabbits.webp"
+            alt="Rabbits"
+          />
+          <img
+            class="back-face"
+            src="assets/images/card-back-image.webp"
+            alt="Spiral Card"
+          />
+        </div>
+      </section>
+
+      <!-- How to play Modal -->
+      <div id="myModal" class="modal">
+        <!-- How to play Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="rules">How to Play</h2>
+          <p>
+            The purpose of this memory game is to memorize the locations of the
+            cards in the game and to make pairs of cards by turning them over 2
+            by 2. When the 2 cards match, it's a pair! You win the pair and have
+            the right to play again, otherwise the cards are automatically
+            turned face down and you have to make a new try.
+          </p>
+          <p>
+            Every time you start a new game, a random selection and a random
+            positioning of the cards ensure you have a different game than the
+            previous one, so you can play as many times as you want!
+          </p>
+        </div>
+      </div>
     </div>
 
-    <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
-    <section class="memory-game">
-    <!-- Card Images -->
-      <div class="memory-card" data-framework="cat">
-        <img class="front-face" src="assets/images/cat.webp" alt="Cat">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="cat">
-        <img class="front-face" src="assets/images/cat.webp" alt="Cat">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="chicken">
-        <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="chicken">
-        <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="cows">
-        <img class="front-face" src="assets/images/cows.webp" alt="Cows">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="cows">
-        <img class="front-face" src="assets/images/cows.webp" alt="Cows">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="dogs">
-        <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="dogs">
-        <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="fish-pond">
-        <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="fish-pond">
-        <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="guinea-pig">
-        <img class="front-face" src="assets/images/guinea-pig.webp" alt="Guinea-pig">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-      
-      <div class="memory-card" data-framework="guinea-pig">
-        <img class="front-face" src="assets/images/guinea-pig.webp" alt="Guinea-pig">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="parrots">
-        <img class="front-face" src="assets/images/parrots.webp" alt="Parrots">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-    
-      <div class="memory-card" data-framework="parrots">
-        <img class="front-face" src="assets/images/parrots.webp" alt="Parrots">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="rabbits">
-        <img class="front-face" src="assets/images/rabbits.webp" alt="Rabbits">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-
-      <div class="memory-card" data-framework="rabbits">
-        <img class="front-face" src="assets/images/rabbits.webp" alt="Rabbits">
-        <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
-      </div>
-    </section>
-     
-  <!-- How to play Modal -->
-  <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2 class="rules">How to Play</h2>
-    <p>The purpose of this memory game is to memorize the locations of the cards in the 
-      game and to make pairs of cards by turning them over 2 by 2. When the 2 cards match,
-       it's a pair! You win the pair and have the right to play again, otherwise the cards
-       are automatically turned face down and you have to make a new try.
-    </p>
-    <p>Every time you start a new game, a random selection and a random positioning of the
-      cards ensure you have a different game than the previous one, so you can play as many times 
-      as you want!
-    </p>
-  </div>
-
-</div>
-
-  <script src="assets/js/script.js"></script>
-  <script src="https://kit.fontawesome.com/060a522d0a.js" crossorigin="anonymous"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/060a522d0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
