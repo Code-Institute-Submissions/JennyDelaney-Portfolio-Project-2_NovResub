@@ -2,6 +2,8 @@
 
 This is a memory game created by Jenny Delaney. It is designed to be responsive and accessible on a range of devices, making it easy to navigate and is geared towards children aged up to 12 years.
 
+![AmIResponsive Images](assets/readme-images/AmIResponsive.jpg)
+
 ## User Experience (UX)User Experience (UX)
 ### User storiesUser stories
 - The user should see a grid style game with 16 cards on display - these cards will have a front and back image.
