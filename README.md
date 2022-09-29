@@ -16,7 +16,7 @@ This is a memory game created by Jenny Delaney. It is designed to be responsive 
 ### Colour Scheme
 Colour scheme is blue and pink.  
 
-#### Imagery
+### Imagery
 Imagery is important. The images are fun pictures of pets which children can relate to.
 
 ## Wireframes
@@ -49,7 +49,7 @@ Imagery is important. The images are fun pictures of pets which children can rel
     - Photos were download from this site of pet animals for the game.
 4. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-5. [Word:]
+5. Word:
     - Used to create the card back-image.
 
 ## Testing
@@ -62,6 +62,9 @@ Results - 36 Warnings about self closing tags.  These were removed. Validator re
 Results - Line 60 Value Error: position : center is not a position. This was removed. Validator returned Clear.
 -   [JavaScript Validator](https://jshint.com/) - 
 Results - Three variable were undefined. These were removed.
+-   Lighthouse Tool - Lighthouse was run in Microsoft Edge in InPrivate Mode
+Results - 
+![Lighthouse Results](assets/readme-images/Lighthouse-results.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
 
