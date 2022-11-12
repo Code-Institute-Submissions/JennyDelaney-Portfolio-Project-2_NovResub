@@ -15,8 +15,9 @@
 
       <!-- Rules and Reset buttons -->
       <div class="game-track">
-        <span class="button" id="myBtn">How to play</span>
-        <span class="button" id="reset-btn" onclick="reset()">Reset</span>
+        <span class="button" id="playBtn">How to play</span>
+        <span class="button" id="themeBtn">Choose Theme</span>
+        <span class="button" id="resetBtn" onclick="reset()">Reset</span>
       </div>
 
       <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/)-->
@@ -182,7 +183,7 @@
       </div>
 
       <!-- How to play Modal -->
-      <div id="myModal" class="modal">
+      <article id="howToPlay" class="modal">
         <!-- How to play Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
@@ -200,7 +201,21 @@
             previous one, so you can play as many times as you want!
           </p>
         </div>
-      </div>
+      </article>
+
+      <!-- Theme Choice Modal -->
+      <article id = "themeChoice" class = "modal">
+        <!-- How to play Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="rules">Choose a theme</h2>
+          <div class="game-track">
+            <span class="button" id="animals" onclick="setTheme('animals')">Animals</span>
+            <span class="button" id="space" onclick="setTheme('space')">Space</span>
+            <span class="button" id="sports" onclick="setTheme('sports')">Sports</span>
+          </div>
+        </div>
+      </article>
     </div>
 
     <script src="assets/js/script.js"></script>
