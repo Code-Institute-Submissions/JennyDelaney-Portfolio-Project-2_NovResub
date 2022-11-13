@@ -112,7 +112,7 @@ and amended */
 .rules {
   text-align: center;
   color: rgb(255, 102, 204);
-  font-size: large;
+  font-size: xx-large;
   font-weight: 600;
 }
 
@@ -134,5 +134,4 @@ and amended */
 #winText {
   text-align: center;
   font-size: x-large;
-  font-weight: ;
 }
