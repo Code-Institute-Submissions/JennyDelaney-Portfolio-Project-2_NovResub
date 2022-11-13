@@ -9,17 +9,19 @@
     <title>Memory Charger</title>
   </head>
   <body>
-    <div class="game-container">
+    <header>
       <!-- Title of Game -->
       <h1 class="heading">Memory Charge !</h1>
-
+    </header>
+    <section>
       <!-- Rules and Reset buttons -->
       <div class="game-track">
         <span class="button" id="playBtn">How to play</span>
         <span class="button" id="themeBtn">Choose Theme</span>
         <span class="button" id="resetBtn" onclick="reset()">Reset</span>
       </div>
-
+    </section>
+    <section class="game-container">
       <div class="game-area">
         <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/) -->
         <div class="memory-game">
@@ -106,10 +108,7 @@
           </div>
 
           <div class="memory-card" data-framework="fish-pond">
-            <img
-              class="front-face"
-              src="assets/images/fish-pond.webp"
-              alt="fish-pond">
+            <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
             <img
               class="back-face"
               src="assets/images/card-back-image.webp"
@@ -182,7 +181,7 @@
               alt="Spiral Card">
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- How to play Modal -->
       <article id="howToPlay" class="modal">
@@ -214,7 +213,20 @@
           <div class="game-track">
             <span class="button" id="animals" onclick="setTheme('animals')">Animals</span>
             <span class="button" id="space" onclick="setTheme('space')">Space</span>
-            <span class="button" id="sports" onclick="setTheme('sports')">Sports</span>
+            <span class="button" id="sports" onclick="setTheme('sport')">Sports</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Win Modal content -->
+      <article id = "winText" class = "modal">
+        <!-- How to play Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="rules">Congratulations!!</h2>
+          <p>
+            You have won the game.  Well done!!
+          </p>
           </div>
         </div>
       </article>
