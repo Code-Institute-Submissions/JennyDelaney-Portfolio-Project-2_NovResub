@@ -50,7 +50,6 @@ function disableCards() {
   if (cardCorrect === 8) {
     setTimeout(function () {
       endModal();
-      resetGame();
     }, 1000);
   }
  
