@@ -50,10 +50,10 @@ and amended */
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 22% 22% 22% 22%;
   justify-content: center;
-  height: 620px;
+  height: 600px;
   margin: auto;
   perspective: 1000px;
-  padding: 10px
+  padding: 20px
 }
 
 .memory-card {
