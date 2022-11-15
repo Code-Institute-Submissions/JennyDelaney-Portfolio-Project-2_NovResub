@@ -46,8 +46,7 @@ body {
   background: #999;
 }
 
-/* Board Game Area (code copied from https://kaylaesmith1.github.io/sea-creature-memory-game/ 
-and amended */
+/* Board Game Area */
 
 .memory-game {
   display: grid;
@@ -61,7 +60,7 @@ and amended */
   padding: 20px
 }
 
-.memory-card {
+.memory-card, .space-memory-card {
   margin: 2px;
   position: relative;
   border: 3px solid #002169;
@@ -72,7 +71,7 @@ and amended */
   transition: transform 0.5s;
 }
 
-.memory-card:active {
+.memory-card:active, .space-memory-card:active {
   transform: scale(0.97);
   transition: transform 0.2s;
 }
@@ -86,13 +85,15 @@ and amended */
   backface-visibility: hidden;
 }
 
-.memory-card.flip {
+.memory-card.flip, .space-memory-card.flip {
   transform: rotateY(180deg);
 }
 
 .front-face {
   transform: rotateY(180deg);
 }
+
+
 
 /* The Modal (background) */
 .modal {

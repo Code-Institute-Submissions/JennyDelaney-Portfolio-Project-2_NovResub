@@ -1,6 +1,9 @@
-// Game functions - code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/ and amended
+let animalMode = document.getElementById("animals");
+let spaceMode = document.getElementById("space");
+let sportMode = document.getElementById("sports")
 
 const cards = document.querySelectorAll(".memory-card");
+const cards1 = document.querySelectorAll(".space-memory-card")
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -20,6 +23,8 @@ var spanTheme = document.getElementsByClassName("close")[1]; // Get the <span> e
 var spanWin = document.getElementsByClassName("close")[2]; // Get the <span> element that closes the modal
 
 function flipCard() {
+  console.log("I was clicked");
+  console.log(this);
   if (lockBoard) return;
   if (this === firstCard) return;
 
@@ -77,11 +82,16 @@ function resetBoard() {
     let randomPos = Math.floor(Math.random() * 16);
     card.style.order = randomPos;
   });
+  cards1.forEach((card) => {
+    let randomPos = Math.floor(Math.random() * 16);
+    card.style.order = randomPos;
+  });
 })();
 
 // Events
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
+cards1.forEach((card) => card.addEventListener("click", flipCard));
 
 // Reset button
 function reset() {
@@ -92,12 +102,12 @@ function reset() {
 
 // Set Theme
 function setTheme(choice) {
-  
+
   var gameAreaHTML = document.querySelector('.game-area');
-  
+
   if (choice === 'animals') {
     console.log('you choose animals!');
-    var gameAreaContents = `
+    let gameAreaContents = `
     <div class="memory-game">
         <!-- Card Images -->
         <div class="memory-card" data-framework="cat">
@@ -248,7 +258,7 @@ function setTheme(choice) {
 
   if (choice === 'space') {
     console.log('you choose space!');
-    var gameAreaContents = `
+    let gameAreaContents = `
     <div class="memory-game">
         <div class="memory-card" data-framework="earth">
           <img class="front-face" src="assets/images/earth.webp" alt="Planet Earth">
@@ -413,7 +423,7 @@ function setTheme(choice) {
 
   if (choice === 'sport') {
     console.log('you choose sport!');
-    var gameAreaContents = `
+    let gameAreaContents = `
     <div class="memory-game">
         <div class="memory-card" data-framework="american_football">
           <img class="front-face" src="assets/images/american_football.webp" alt="American Football pile-up">

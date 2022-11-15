@@ -22,166 +22,254 @@
       </div>
     </section>
     <section class="game-container">
-      <div class="game-area">
-        <!-- Game Board (code taken from https://marina-ferreira.github.io/tutorials/js/memory-game/) -->
-        <div class="memory-game">
+      <div class="animal-game">
+        <!-- Game Board -->
+        <div id="animals" class="memory-game">
           <!-- Card Images -->
           <div class="memory-card" data-framework="cat">
             <img class="front-face" src="assets/images/cat.webp" alt="Cat">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="cat">
             <img class="front-face" src="assets/images/cat.webp" alt="Cat">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="chicken">
-            <img
-              class="front-face"
-              src="assets/images/chicken.webp"
-              alt="Chicken">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="chicken">
-            <img
-              class="front-face"
-              src="assets/images/chicken.webp"
-              alt="Chicken">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="cows">
             <img class="front-face" src="assets/images/cows.webp" alt="Cows">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="cows">
             <img class="front-face" src="assets/images/cows.webp" alt="Cows">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="dogs">
             <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="dogs">
             <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-
-          <div class="memory-card" data-framework="fish-pond">
-            <img
-              class="front-face"
-              src="assets/images/fish-pond.webp"
-              alt="fish-pond">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="fish-pond">
             <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+          </div>
+
+          <div class="memory-card" data-framework="fish-pond">
+            <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="guinea-pig">
-            <img
-              class="front-face"
-              src="assets/images/guinea-pig.webp"
-              alt="Guinea-pig">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="front-face" src="assets/images/guinea-pig.webp" alt="Guinea-pig">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="guinea-pig">
-            <img
-              class="front-face"
-              src="assets/images/guinea-pig.webp"
-              alt="Guinea-pig">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="front-face" src="assets/images/guinea-pig.webp" alt="Guinea-pig">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="parrots">
-            <img
-              class="front-face"
-              src="assets/images/parrots.webp"
-              alt="Parrots">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
+            <img class="front-face" src="assets/images/parrots.webp" alt="Parrots">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
           </div>
 
           <div class="memory-card" data-framework="parrots">
-            <img
-              class="front-face"
-              src="assets/images/parrots.webp"
-              alt="Parrots">
+            <img class="front-face" src="assets/images/parrots.webp" alt="Parrots">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+          </div>
+
+          <div class="memory-card" data-framework="rabbits">
+            <img class="front-face" src="assets/images/rabbits.webp" alt="Rabbits">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+          </div>
+
+          <div class="memory-card" data-framework="rabbits">
+            <img class="front-face" src="assets/images/rabbits.webp" alt="Rabbits">
+            <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card"> 
+          </div>
+        </div>
+      </div>
+      <div class="space-game">
+        <!-- Game Board -->
+        <div id="space" class="memory-game">
+          <div class="space-memory-card" data-framework="earth">
+            <img class="front-face" src="assets/images/earth.webp" alt="Planet Earth">
             <img
               class="back-face"
               src="assets/images/card-back-image.webp"
               alt="Spiral Card">
           </div>
-
-          <div class="memory-card" data-framework="rabbits">
-            <img
-              class="front-face"
-              src="assets/images/rabbits.webp"
-              alt="Rabbits">
+  
+          <div class="space-memory-card" data-framework="earth">
+            <img class="front-face" src="assets/images/earth.webp" alt="Planet earth">
             <img
               class="back-face"
               src="assets/images/card-back-image.webp"
               alt="Spiral Card">
           </div>
-
-          <div class="memory-card" data-framework="rabbits">
+  
+          <div class="space-memory-card" data-framework="jupiter">
             <img
               class="front-face"
-              src="assets/images/rabbits.webp"
-              alt="Rabbits">
+              src="assets/images/jupiter.webp"
+              alt="Planet Jupiter">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="jupiter">
+            <img
+              class="front-face"
+              src="assets/images/jupiter.webp"
+              alt="Planet Jupiter">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="mars">
+            <img class="front-face" src="assets/images/mars.webp" alt="Planet Mars">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="mars">
+            <img class="front-face" src="assets/images/mars.webp" alt="Planet Mars">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="mercury">
+            <img class="front-face" src="assets/images/mercury.webp" alt="Planet Mercury">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="mercury">
+            <img class="front-face" src="assets/images/mercury.webp" alt="Planet Mercury">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="neptune">
+            <img
+              class="front-face"
+              src="assets/images/neptune.webp"
+              alt="Planet Neptune">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="neptune">
+            <img
+              class="front-face"
+              src="assets/images/neptune.webp"
+              alt="Planet Neptune">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="saturn">
+            <img
+              class="front-face"
+              src="assets/images/saturn.webp"
+              alt="Planet Saturn">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="saturn">
+            <img
+              class="front-face"
+              src="assets/images/saturn.webp"
+              alt="Planet Saturn">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="uranus">
+            <img
+              class="front-face"
+              src="assets/images/uranus.webp"
+              alt="Planet Uranus">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="uranus">
+            <img
+              class="front-face"
+              src="assets/images/uranus.webp"
+              alt="Planet Uranus">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="venus">
+            <img
+              class="front-face"
+              src="assets/images/venus.webp"
+              alt="Planet Venus">
+            <img
+              class="back-face"
+              src="assets/images/card-back-image.webp"
+              alt="Spiral Card">
+          </div>
+  
+          <div class="space-memory-card" data-framework="venus">
+            <img
+              class="front-face"
+              src="assets/images/venus.webp"
+              alt="Planet Venus">
             <img
               class="back-face"
               src="assets/images/card-back-image.webp"
               alt="Spiral Card">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <!-- How to play Modal -->
       <article id="howToPlay" class="modal">
