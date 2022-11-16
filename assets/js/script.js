@@ -1,10 +1,13 @@
-
+// Get all cards
 const cards = document.querySelectorAll(".memory-card");
-
+// flip cards, check match and count
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+// Game Controls
 let cardCorrect = 0;
+let cardCount;
+let timerCount = 0;
 
 // code for modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp and amended to suit.
 var playModal = document.getElementById("howToPlay"); // How to play Modal
@@ -34,7 +37,14 @@ function flipCard() {
   secondCard = this;
 
   checkForMatch();
+  moves();
   }
+}
+
+// Moves Counter
+function moves() {
+  let counter = parseInt(document.getElementById("counter-flips").innerText);
+  counter = document.getElementById("counter-flips").innerText = ++counter;
 }
 
 function checkForMatch() {

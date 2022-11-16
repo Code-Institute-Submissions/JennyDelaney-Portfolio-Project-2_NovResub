@@ -46,6 +46,28 @@ body {
   background: #999;
 }
 
+.moves {
+  text-align: center;
+  margin: 10px;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  height: 70px;
+  width: 285px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(255, 102, 204);
+  color: white;
+  font-size: 20px;
+}
+
+.count-flips {
+  height: 70px;
+  width: 285px;
+  margin: auto;
+}
+
 /* Board Game Area */
 
 .memory-game {
@@ -144,3 +166,4 @@ body {
   text-align: center;
   font-size: large;
 }
+
