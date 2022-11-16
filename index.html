@@ -17,7 +17,6 @@
       <!-- Rules and Reset buttons -->
       <div class="game-track">
         <span class="button" id="playBtn">How to play</span>
-        <span class="button" id="themeBtn">Choose Theme</span>
         <span class="button" id="resetBtn" onclick="reset()">Reset</span>
       </div>
     </section>
@@ -107,168 +106,6 @@
           </div>
         </div>
       </div>
-      <div class="space-game">
-        <!-- Game Board -->
-        <div id="space" class="memory-game">
-          <div class="space-memory-card" data-framework="earth">
-            <img class="front-face" src="assets/images/earth.webp" alt="Planet Earth">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="earth">
-            <img class="front-face" src="assets/images/earth.webp" alt="Planet earth">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="jupiter">
-            <img
-              class="front-face"
-              src="assets/images/jupiter.webp"
-              alt="Planet Jupiter">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="jupiter">
-            <img
-              class="front-face"
-              src="assets/images/jupiter.webp"
-              alt="Planet Jupiter">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="mars">
-            <img class="front-face" src="assets/images/mars.webp" alt="Planet Mars">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="mars">
-            <img class="front-face" src="assets/images/mars.webp" alt="Planet Mars">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="mercury">
-            <img class="front-face" src="assets/images/mercury.webp" alt="Planet Mercury">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="mercury">
-            <img class="front-face" src="assets/images/mercury.webp" alt="Planet Mercury">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="neptune">
-            <img
-              class="front-face"
-              src="assets/images/neptune.webp"
-              alt="Planet Neptune">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="neptune">
-            <img
-              class="front-face"
-              src="assets/images/neptune.webp"
-              alt="Planet Neptune">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="saturn">
-            <img
-              class="front-face"
-              src="assets/images/saturn.webp"
-              alt="Planet Saturn">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="saturn">
-            <img
-              class="front-face"
-              src="assets/images/saturn.webp"
-              alt="Planet Saturn">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="uranus">
-            <img
-              class="front-face"
-              src="assets/images/uranus.webp"
-              alt="Planet Uranus">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="uranus">
-            <img
-              class="front-face"
-              src="assets/images/uranus.webp"
-              alt="Planet Uranus">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="venus">
-            <img
-              class="front-face"
-              src="assets/images/venus.webp"
-              alt="Planet Venus">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-  
-          <div class="space-memory-card" data-framework="venus">
-            <img
-              class="front-face"
-              src="assets/images/venus.webp"
-              alt="Planet Venus">
-            <img
-              class="back-face"
-              src="assets/images/card-back-image.webp"
-              alt="Spiral Card">
-          </div>
-        </div>
-      </div>
     </section>
 
       <!-- How to play Modal -->
@@ -291,20 +128,6 @@
         </div>
       </article>
 
-      <!-- Theme Choice Modal -->
-      <article id = "themeChoice" class = "modal">
-        <!-- How to play Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 class="rules">Pick a theme</h2>
-          <div class="game-track">
-            <span class="button" id="animals" onclick="setTheme('animals')">Animals</span>
-            <span class="button" id="space" onclick="setTheme('space')">Space</span>
-            <span class="button" id="sports" onclick="setTheme('sport')">Sports</span>
-          </div>
-        </div>
-      </article>
-
       <!-- Win Modal content -->
       <article id = "winText" class = "modal">
         <!-- How to play Modal content -->
@@ -312,6 +135,8 @@
           <span class="close">&times;</span>
           <h2 class="rules">Congratulations!!</h2>
           <p>You have won the game.  Well done!!</p>
+          <div class="game-track">
+          <span class="button" id="replayBtn" onclick="reset()">Replay Game</span>
           </div>
         </div>
       </article>
