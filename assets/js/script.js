@@ -11,14 +11,11 @@ let timerCount = 0;
 
 // code for modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp and amended to suit.
 var playModal = document.getElementById("howToPlay"); // How to play Modal
-var themeModal = document.getElementById("themeChoice"); // Theme Choice Modal
 var winModal = document.getElementById("winText");
 var play = document.getElementById("playBtn"); // Get the button that opens the modal
-var theme = document.getElementById("themeBtn"); // Theme Choices
 var win = document.getElementById("winModal"); // Win Modal
 var spanPlay = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
-var spanTheme = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
-var spanWin = document.getElementsByClassName("close")[2]; // Get the <span> element that closes the modal
+var spanWin = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
 
 function flipCard() {
   console.log("I was clicked");
@@ -122,8 +119,12 @@ window.onclick = function (event) {
 function endModal() {
   winModal.style.display = "block";
 
+  let showMoves = document.getElementById("showMoves");
+  showMoves.innerText = document.getElementById("counter-flips").innerText;
+  console.log("showMoves")
+
   // When the user clicks on <span> (x), close the winmodal
   spanWin.onclick = function () {
     winModal.style.display = "none";
-  }
-}
+  };
+};
