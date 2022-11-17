@@ -1,13 +1,17 @@
 // Get all cards
 const cards = document.querySelectorAll(".memory-card");
-// flip cards, check match and count
+
+// flip cards, check match and end game
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-// Game Controls
 let cardCorrect = 0;
-let cardCount;
-let timerCount = 0;
+
+// Timer
+let timeOn = false;
+let gameStart = document.getElementById("timer");
+let timer;
+let countdown;
 
 // code for modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp and amended to suit.
 var playModal = document.getElementById("howToPlay"); // How to play Modal
@@ -22,6 +26,10 @@ function flipCard() {
   console.log(this);
   if (lockBoard) return;
   if (this === firstCard) return;
+  if (!timeOn) {
+    timeOn = true;
+    startTimer();
+  }
 
   this.classList.add("flip");
 
@@ -38,6 +46,15 @@ function flipCard() {
   }
 }
 
+// Timer
+function startTimer () {
+  countdown = 120;
+  timer = setInterval(function () {
+    countdown--;
+    gameStart.innerText = countdown;
+  }, 1000);
+}
+
 // Moves Counter
 function moves() {
   let counter = parseInt(document.getElementById("counter-flips").innerText);
@@ -47,7 +64,6 @@ function moves() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   isMatch ? disableCards() : unflipCards();
-  
 }
 
 function disableCards() {
@@ -57,6 +73,7 @@ function disableCards() {
   if (cardCorrect === 8) {
     setTimeout(function () {
       endModal();
+      clearInterval(timer);
     }, 1000);
   }
  
@@ -121,7 +138,7 @@ function endModal() {
 
   let showMoves = document.getElementById("showMoves");
   showMoves.innerText = document.getElementById("counter-flips").innerText;
-  console.log("showMoves")
+
 
   // When the user clicks on <span> (x), close the winmodal
   spanWin.onclick = function () {
