@@ -14,12 +14,15 @@ let timer;
 let countdown;
 
 // code for modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp and amended to suit.
+var welcomeModal = document.getElementById("welcome-screen"); // Welcome pop up modal
 var playModal = document.getElementById("howToPlay"); // How to play Modal
-var winModal = document.getElementById("winText");
+var winModal = document.getElementById("winText"); // Win modal text
 var play = document.getElementById("playBtn"); // Get the button that opens the modal
 var win = document.getElementById("winModal"); // Win Modal
-var spanPlay = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
-var spanWin = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
+var spanModal = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+var spanPlay = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
+var spanWin = document.getElementsByClassName("close")[2]; // Get the <span> element that closes the modal
+
 
 function flipCard() {
   console.log("I was clicked");
@@ -114,6 +117,18 @@ function reset() {
   }, 900);
 }
 
+// Welcome Modal
+window.onload = function () {
+  setTimeout(function(){
+    welcomeModal.style.display = "block";
+}, 2000);
+}
+
+spanModal.onclick = function() {
+  welcomeModal.style.display = "none";
+};
+
+
 // When the user clicks on the button, open the modal
 play.onclick = function () {
   playModal.style.display = "block";
@@ -126,7 +141,7 @@ spanPlay.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == playModal || event.target == winModal) {
+  if (event.target == playModal || event.target == winModal || event.target == welcomeModal) {
     playModal.style.display = "none";
     winModal.style.display = "none";
   }
