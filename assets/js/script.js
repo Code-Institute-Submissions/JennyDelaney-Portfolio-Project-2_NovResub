@@ -19,6 +19,7 @@ var playModal = document.getElementById("howToPlay"); // How to play Modal
 var winModal = document.getElementById("winText"); // Win modal text
 var timerUpModal = document.getElementById("time-up"); // No time left on timer
 var play = document.getElementById("playBtn"); // Get the button that opens the modal
+var start = document.getElementById("startBtn"); // Start Game Button
 var spanModal = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 var spanPlay = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
 var spanWin = document.getElementsByClassName("close")[2]; // Get the <span> element that closes the modal
@@ -52,7 +53,7 @@ function flipCard() {
 
 // Timer
 function startTimer () {
-  countdown = 10;
+  countdown = 120;
   timer = setInterval(function () {
     countdown--;
     gameStart.innerText = countdown;
@@ -120,7 +121,7 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 window.onload = function () {
   setTimeout(function(){
     welcomeModal.style.display = "block";
-}, 1000);
+}, 500);
 };
 
 // When the user clicks on <span> (x), close the welcomemodal
@@ -132,7 +133,7 @@ spanModal.onclick = function() {
 function reset() {
   setTimeout(() => {
     window.location.reload(true);
-  }, 900);
+  }, 500);
 };
 
 // When the user clicks on the button, open the How to play modal
@@ -178,4 +179,9 @@ function timesUp() {
   spanTimer.onclick = function () {
     timerUpModal.style.display = "none";
   }
-}
+};
+
+// Start Game Button
+startBtn.onclick = function startGameBtn() {
+  welcomeModal.style.display = "none";
+};
