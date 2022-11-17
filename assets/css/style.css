@@ -162,8 +162,7 @@ body {
   cursor: pointer;
 }
 
-#winText {
+#winText, #time-up {
   text-align: center;
   font-size: large;
 }
-

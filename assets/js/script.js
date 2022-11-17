@@ -17,11 +17,12 @@ let countdown;
 var welcomeModal = document.getElementById("welcome-screen"); // Welcome pop up modal
 var playModal = document.getElementById("howToPlay"); // How to play Modal
 var winModal = document.getElementById("winText"); // Win modal text
+var timerUpModal = document.getElementById("time-up"); // No time left on timer
 var play = document.getElementById("playBtn"); // Get the button that opens the modal
-var win = document.getElementById("winModal"); // Win Modal
 var spanModal = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 var spanPlay = document.getElementsByClassName("close")[1]; // Get the <span> element that closes the modal
 var spanWin = document.getElementsByClassName("close")[2]; // Get the <span> element that closes the modal
+var spanTimer = document.getElementsByClassName("close")[3];// Get the <span> element that closes the modal
 
 
 function flipCard() {
@@ -51,10 +52,15 @@ function flipCard() {
 
 // Timer
 function startTimer () {
-  countdown = 120;
+  countdown = 10;
   timer = setInterval(function () {
     countdown--;
     gameStart.innerText = countdown;
+    if (countdown <= 0) {
+      clearInterval(timer);
+      timesUp();
+      disableCards();
+    }
   }, 1000);
 }
 
@@ -110,26 +116,26 @@ function resetBoard() {
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
-// Reset button
-function reset() {
-  setTimeout(() => {
-    window.location.reload(true);
-  }, 900);
-}
-
 // Welcome Modal
 window.onload = function () {
   setTimeout(function(){
     welcomeModal.style.display = "block";
-}, 2000);
-}
+}, 1000);
+};
 
+// When the user clicks on <span> (x), close the welcomemodal
 spanModal.onclick = function() {
   welcomeModal.style.display = "none";
 };
 
+// Re-start button
+function reset() {
+  setTimeout(() => {
+    window.location.reload(true);
+  }, 900);
+};
 
-// When the user clicks on the button, open the modal
+// When the user clicks on the button, open the How to play modal
 play.onclick = function () {
   playModal.style.display = "block";
 };
@@ -144,6 +150,7 @@ window.onclick = function (event) {
   if (event.target == playModal || event.target == winModal || event.target == welcomeModal) {
     playModal.style.display = "none";
     winModal.style.display = "none";
+    welcomeModal.style.display = "none";
   }
 };
 
@@ -154,9 +161,21 @@ function endModal() {
   let showMoves = document.getElementById("showMoves");
   showMoves.innerText = document.getElementById("counter-flips").innerText;
 
+  let showTime = document.getElementById("showTime");
+  showTime.innerText = document.getElementById("timer").innerText;
 
   // When the user clicks on <span> (x), close the winmodal
   spanWin.onclick = function () {
     winModal.style.display = "none";
   };
 };
+
+// Timer Up Modal
+function timesUp() {
+  timerUpModal.style.display = "block";
+
+  // When the user clicks on <span> (x), close the Timer Up modal
+  spanTimer.onclick = function () {
+    timerUpModal.style.display = "none";
+  }
+}
