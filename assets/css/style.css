@@ -22,7 +22,7 @@ body {
   border: 4px solid #002169;
   margin: 0 auto;
   max-width: 750px;
-  height: 620px;
+  height: 570px;
   position: relative;
 }
 
@@ -74,7 +74,7 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
   justify-content: center;
-  height: 550px;
+  height: 500px;
   margin: auto;
   perspective: 1000px;
   padding: 10px
@@ -112,8 +112,6 @@ body {
 .front-face {
   transform: rotateY(180deg);
 }
-
-
 
 /* The Modal (background) */
 .modal {
