@@ -28,8 +28,6 @@ var spanTimer = document.getElementsByClassName("close")[3];// Get the <span> el
 
 
 function flipCard() {
-  console.log("I was clicked");
-  console.log(this);
   if (lockBoard) return;
   if (this === firstCard) return;
   if (!timeOn) {
@@ -149,10 +147,9 @@ spanPlay.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == playModal || event.target == winModal || event.target == welcomeModal) {
+  if (event.target == playModal || event.target == winModal) {
     playModal.style.display = "none";
     winModal.style.display = "none";
-    welcomeModal.style.display = "none";
   }
 };
 
