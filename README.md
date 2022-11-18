@@ -45,8 +45,8 @@ Imagery is important. The images are fun pictures of pets which children can rel
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 2. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-3. [Pexels:](https://www.pexels.com)
-    - Photos were download from this site of pet animals for the game.
+3. [Wikipedia:](https://www.wikipedia.org)
+    - Photos were download from this site of animals for the game.
 4. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 5. Word:
@@ -64,6 +64,7 @@ Results - Line 60 Value Error: position : center is not a position. This was rem
 Results - Three variable were undefined. These were removed.
 -   Lighthouse Tool - Lighthouse was run in Microsoft Edge in InPrivate Mode
 Results - 
+
 ![Lighthouse Results](assets/readme-images/Lighthouse-results.jpg)
 
 ### Testing User Stories from User Experience (UX) Section
@@ -75,15 +76,14 @@ Results -
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.  Website does not appear to be suitable on Mozilla.
+-   The Website was tested on Google Chrome, Microsoft Edge, Mozilla and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone 8 & iPhone XR.
 -   A large amount of testing was done to ensure game responded as expected.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 
--   On mobile devices the game board needs to be squeezed and reposition slightly to fit in the screen.
--   A white gap can be seen to the bottom of some monitor screens depending on how big they are.
+- No bugs were discovered.
 
 ## Deployment
 
@@ -103,9 +103,13 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Code
 
--   The game function code was written while following a tutorial by Marina Ferreira (https://marina-ferreira.github.io/tutorials/js/memory-game/)
+-   The youtube tutorial from Marina Ferreira (https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
--   The modal code was followed on W3Schools webiste (https://www.w3schools.com/howto/howto_css_modals.asp) and amended to work.
+-   W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+
+-   My mentor - Spencer Barriball
+
+-   StackOverFlow
 
 ### Content
 
@@ -113,9 +117,9 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Media
 
--   All Images used on the card front and the background image were taken from Pexels.com website.
+-   All Images used on the card front and the background image were taken from Wikipedia.org website.
 -   The back of the card was created in word by the developer.
 
 ### Acknowledgements
 
--   My Mentor for continuous helpful feedback.
+-   My family for their continued support while working on my projects and my Mentor for continuous helpful feedback.
