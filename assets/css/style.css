@@ -5,8 +5,7 @@
 }
 
 body {
-  background: url(../images/background-image.webp) no-repeat center center /
-    cover;
+  background-color: rgb(250, 182, 227);
   min-height: 100vh;
 }
 
