@@ -22,7 +22,7 @@ body {
   border: 4px solid #002169;
   margin: 0 auto;
   max-width: 750px;
-  height: 600px;
+  height: 620px;
   position: relative;
 }
 
@@ -48,12 +48,11 @@ body {
 
 .moves {
   text-align: center;
-  margin: 10px;
   display: block;
   padding: 5px 10px;
   border-radius: 10px;
-  height: 70px;
-  width: 285px;
+  height: 40px;
+  width: 200px;
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
@@ -63,9 +62,8 @@ body {
 }
 
 .count-flips {
-  height: 70px;
-  width: 285px;
-  margin: auto;
+  text-align: center;
+  display: block;
 }
 
 /* Board Game Area */
@@ -76,13 +74,13 @@ body {
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 25% 25% 25% 25%;
   justify-content: center;
-  height: 600px;
+  height: 550px;
   margin: auto;
   perspective: 1000px;
-  padding: 20px
+  padding: 10px
 }
 
-.memory-card, .space-memory-card {
+.memory-card {
   margin: 2px;
   position: relative;
   border: 3px solid #002169;
@@ -93,7 +91,7 @@ body {
   transition: transform 0.5s;
 }
 
-.memory-card:active, .space-memory-card:active {
+.memory-card:active {
   transform: scale(0.97);
   transition: transform 0.2s;
 }
@@ -107,7 +105,7 @@ body {
   backface-visibility: hidden;
 }
 
-.memory-card.flip, .space-memory-card.flip {
+.memory-card.flip {
   transform: rotateY(180deg);
 }
 
