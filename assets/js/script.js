@@ -13,7 +13,7 @@ let gameStart = document.getElementById("timer");
 let timer;
 let countdown;
 
-// code for modal was taken from https://www.w3schools.com/howto/howto_css_modals.asp and amended to suit.
+// Modal setups
 var welcomeModal = document.getElementById("welcome-screen"); // Welcome pop up modal
 var playModal = document.getElementById("howToPlay"); // How to play Modal
 var winModal = document.getElementById("winText"); // Win modal text

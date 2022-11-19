@@ -14,10 +14,10 @@ This is a memory game created by Jenny Delaney. It is designed to be responsive 
 
 ## Design
 ### Colour Scheme
-Colour scheme is blue and pink.
+Colour scheme is white and pink.
 
 ### Imagery
-Imagery is important. The images are fun pictures of pets which children can relate to.
+Imagery is important. The images are colourful pictures of animals which children can relate to.
 
 ## Wireframes
 ### Main Page Wireframe
@@ -27,7 +27,7 @@ Imagery is important. The images are fun pictures of pets which children can rel
 
 ## Features
 
--   Responsive on all device sizes.  On mobile the user may need to reposition and center the game.
+-   Responsive on all device sizes.
 
 -   Interactive elements
 
@@ -62,7 +62,7 @@ Results - 3 warnings.
 
 ![HTML Markup Intial Image](assets/readme-images/initial-HTML-results.jpg)
 
-The sections were changed to div were and / was removed. Validator returned Clear.
+The sections were changed to div and the slash was removed. Validator returned Clear.
 
 ![HTML Markup final Image](assets/readme-images/final-HTML-results.jpg)
 
@@ -95,6 +95,10 @@ Results -
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, iPhone 8 & iPhone XR.
 -   A large amount of testing was done to ensure game responded as expected.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Future Developement
+
+-   The next version of the game could include some different theme options.  I tried to do this for this version but unfortunately ran out of time to complete so had to remove it.
 
 ### Known Bugs
 
