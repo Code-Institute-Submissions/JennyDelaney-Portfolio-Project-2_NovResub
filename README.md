@@ -14,7 +14,7 @@ This is a memory game created by Jenny Delaney. It is designed to be responsive 
 
 ## Design
 ### Colour Scheme
-Colour scheme is blue and pink.  
+Colour scheme is blue and pink.
 
 ### Imagery
 Imagery is important. The images are fun pictures of pets which children can relate to.
@@ -49,7 +49,7 @@ Imagery is important. The images are fun pictures of pets which children can rel
     - Photos were download from this site of animals for the game.
 4. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-5. Word:
+5. Microsoft Word:
     - Used to create the card back-image.
 
 ## Testing
@@ -57,13 +57,28 @@ Imagery is important. The images are fun pictures of pets which children can rel
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
-Results - 36 Warnings about self closing tags.  These were removed. Validator returned Clear.
+
+Results - 3 warnings.
+
+![HTML Markup Intial Image](assets/readme-images/initial-HTML-results.jpg)
+
+The sections were changed to div were and / was removed. Validator returned Clear.
+
+![HTML Markup final Image](assets/readme-images/final-HTML-results.jpg)
+
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - 
-Results - Line 60 Value Error: position : center is not a position. This was removed. Validator returned Clear.
--   [JavaScript Validator](https://jshint.com/) - 
+
+Results - Validator returned Clear.
+
+![CSS Validator Image](assets/readme-images/W3C-css-validation.jpg)
+
+-   [JavaScript Validator](https://jshint.com/) -
+
 Results - Three variable were undefined. These were removed.
--   Lighthouse Tool - Lighthouse was run in Microsoft Edge in InPrivate Mode
-Results - 
+
+-   Lighthouse Tool - Lighthouse was run in Chrome in incognito Mode
+
+Results -
 
 ![Lighthouse Results](assets/readme-images/Lighthouse-results.jpg)
 
